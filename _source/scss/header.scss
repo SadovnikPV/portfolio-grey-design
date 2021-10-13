@@ -1,0 +1,49 @@
+// ----------------- HEADER --------------------------
+.header {
+    width: 100%;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 160px;
+}
+.header__logo {
+    font-family: "PoiretOne-Regular",sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: $color-main-white;
+    margin: 0 10px 0 0;
+}
+.header__logo_fnt-bold {
+    white-space: nowrap;
+    font-weight: bold;
+}
+.header__menu {
+}
+.menu {
+}
+.menu__list {
+    display: flex;
+    padding: 6px 0 0 0;
+    margin: 0 5px 0 0;
+}
+.menu__item {
+    font-family: "Montserrat-Regular",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: $color-main-white;
+    text-transform: uppercase;
+    &:not(:last-child) {
+        margin: 0 29px 0 0;
+    }
+}
+.menu__link {
+    color: inherit;
+    &:hover {
+        text-decoration: underline;
+    }
+}

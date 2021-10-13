@@ -1,0 +1,152 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Cabin-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Cabin-Regular"), url(../fonts/Cabin-Regular.woff) format("woff"), url(../fonts/Cabin-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Montserrat-Regular"), url(../fonts/Montserrat-Regular.woff) format("woff"), url(../fonts/Montserrat-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "PoiretOne-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PoiretOne-Regular"), url(../fonts/PoiretOne-Regular.woff) format("woff"), url(../fonts/PoiretOne-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Raleway-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Raleway-Regular"), url(../fonts/Raleway-Regular.woff) format("woff"), url(../fonts/Raleway-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Raleway-Bold"), url(../fonts/Raleway-Bold.woff) format("woff"), url(../fonts/Raleway-Bold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Lato-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato-Light"), url(../fonts/Lato-Light.woff) format("woff"), url(../fonts/Lato-Light.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Lato-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato-Regular"), url(../fonts/Lato-Regular.woff) format("woff"), url(../fonts/Lato-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Lato-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Lato-Bold"), url(../fonts/Lato-Bold.woff) format("woff"), url(../fonts/Lato-Bold.ttf) format("ttf");
+}
+body {
+  background-color: #9b9a95;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+._container {
+  max-width: 1050px;
+  padding: 0 15px;
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 160px;
+}
+
+.header__logo {
+  font-family: "PoiretOne-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin: 0 10px 0 0;
+}
+
+.header__logo_fnt-bold {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px 0 0 0;
+  margin: 0 5px 0 0;
+}
+
+.menu__item {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #fff;
+  text-transform: uppercase;
+}
+.menu__item:not(:last-child) {
+  margin: 0 29px 0 0;
+}
+
+.menu__link {
+  color: inherit;
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
