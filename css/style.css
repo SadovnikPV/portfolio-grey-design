@@ -146,7 +146,124 @@ body {
 
 .menu__link {
   color: inherit;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 .menu__link:hover {
-  text-decoration: underline;
+  color: #000;
+}
+
+.main-block__title {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1;
+  color: #fff;
+  margin: 125px 0 32px 0;
+  max-width: 700px;
+}
+
+.main-block__text {
+  font-family: "Lato-Light", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 160%;
+  color: #fff;
+  margin: 0 0 61px 0;
+  max-width: 600px;
+}
+
+.main-block__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-block__button {
+  font-family: "Lato-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 22px 20px;
+  border-radius: 5px;
+  background-color: #4ecb8c;
+  margin: 0 0 277px 0;
+}
+
+.features {
+  background-color: #fff;
+}
+
+.features__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.features__title {
+  font-family: "Cabin-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.25;
+  color: #000;
+  text-align: center;
+  margin: 116px 0 98px 0;
+}
+
+.features__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+  margin: 0 0 129px 0;
+}
+
+.column-features {
+  text-align: center;
+  padding: 0 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f2f2f2;
+}
+.column-features:not(:last-child) {
+  margin: 0 32px 0 0;
+}
+
+.column-features__icon {
+  margin: -32px 0 0 0;
+}
+
+.column-features__title {
+  font-family: "Lato-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 0.333;
+  color: #000;
+  text-transform: uppercase;
+  margin: 24px 0;
+}
+
+.column-features__text {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444444;
+  margin: 0 0 26px 0;
 }

@@ -1,0 +1,41 @@
+.main-block {
+}
+.main-block__container {
+}
+.main-block__body {
+}
+.main-block__title {
+    font-family: "Cabin",sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1;
+    color: $color-main-white;
+    margin: 125px 0 32px 0;
+    max-width: 700px;
+}
+.main-block__text {
+    font-family: "Lato-Light",sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+    color: $color-main-white;
+    margin: 0 0 61px 0;
+    max-width: 600px;
+}
+.main-block__buttons {
+    display: flex;
+}
+.main-block__button {
+    font-family: "Lato-Bold",sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    color: $color-main-white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    flex: 0 0 auto;
+    padding: 22px 20px;
+    border-radius: 5px;
+    background-color: $color-button-green;
+    margin: 0 0 277px 0;
+}

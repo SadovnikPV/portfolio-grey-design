@@ -43,7 +43,8 @@
 }
 .menu__link {
     color: inherit;
+    transition: all 0.3s ease 0s;
     &:hover {
-        text-decoration: underline;
+        color: #000;
     }
 }
