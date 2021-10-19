@@ -1,18 +1,24 @@
 // ------------------- Описание переменных -----------------------
 
 // ------------ Цвет текста ---------------
-$color-main-white: #fff;        // Весь белый текст
-$color-main-black: #000;        // Весь черный текст
-$color-secondary-gray: #444444; // Серый цвет (статьи и небольшие блоки)
+$color-main-white: #fff;            // Весь белый текст
+$color-main-black: #000;            // Весь черный текст
+$color-secondary-gray: #444444;     // Серый цвет (статьи и небольшие блоки)
+$color-secondary-gray2: #333333;    // Серый цвет (кнопки)
+$color-secondary-gray3: #666666;    // Серый цвет (Подписи авторов комментариев)
+$color-secondary-gray4: #999999;    // Серый цвет (подписи в блоке from-blog)
 
 // ------------ Цвет фонов ---------------
-$color-bg-gray-main: #9b9a95;   // Основной (шапка сайта - header)
-$color-bg-white: #fff;          // Белые блоки
+$color-bg-gray-main: #9b9a95;       // Основной (шапка сайта - header)
+$color-bg-white: #fff;              // Белые блоки
 $color-bg-gray-light: #e9ebea;
 $color-bg-gray-hard: #353535;
 $color-bg-green: #36c36e;
-$color-bg-footer: #232323;      // Фон подвала (footer)
+$color-bg-footer: #232323;          // Фон подвала (footer)
 
 // ------------ Прочие цвета (кнопки, формы и прочее) ---------------
+
 $color-block-grey: #989898;
-$color-button-green: #4ecb8c;   // Цвет зеленых кнопок
+$color-button-green: #4ecb8c;       // Цвет зеленых кнопок
+$color-border-comment: #dedede;     // Цвет рамки комментария клиента
+$color-percent-sidebar: #202020;     // Цвет подписей сайдбара

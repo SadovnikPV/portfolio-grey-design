@@ -1,3 +1,9 @@
+// ---------------------------------- Подключение миксинов ---------------------------------------
+
+@import "mixins/_font-style-mix.scss";
+
+// ---------------- Подключение всех файлов стилей (общих и для каждого блока) -------------------
+
 @import "reset.scss";
 @import "fonts.scss";
 @import "variables.scss";
@@ -5,3 +11,9 @@
 @import "header.scss";
 @import "main-block.scss";
 @import "features.scss";
+@import "our-story.scss";
+@import "client-comment.scss";
+@import "experience.scss";
+@import "from-blog.scss";
+@import "start-project.scss";
+@import "footer.scss";

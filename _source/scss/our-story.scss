@@ -1,0 +1,60 @@
+.page__our-story {
+}
+.our-story {
+    background-color: $color-bg-gray-light;
+}
+.our-story__container {
+}
+.our-story__body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 539px;
+    @media (max-width: 1024px) {
+        margin: 0;
+        padding: 0 80px;
+    }
+    @media (max-width: 768px) {
+        margin: 0;
+        padding: 0 40px;
+    }
+    @media (max-width: 480px) {
+        margin: 0;
+        padding: 0 15px;
+    }
+}
+.our-story__title {
+    font-family: "Cabin",sans-serif;
+    @include font-style-mix(48px, 400, 1.25, $color-main-black);
+    margin: 115px 0 38px 0;
+    @media (max-width: 480px) {
+        font-size: 38px;
+        margin: 60px 0 20px 0;
+    }
+}
+.our-story__text {
+    font-family: "Lato-Regular",sans-serif;
+    @include font-style-mix(16px, 400, 1.5, $color-secondary-gray);
+    margin: 0 0 35px 0;
+}
+.our-story__buttons {
+    display: flex;
+    margin: 0 0 140px 0;
+    @media (max-width: 480px) {
+        margin: 0 0 60px 0;
+    }
+}
+.our-story__button {
+    font-family: "Lato-Bold",sans-serif;
+    @include font-style-mix(16px, 700, 1, $color-secondary-gray2);
+    text-transform: uppercase;
+    border: 2px solid $color-secondary-gray2;
+    border-radius: 5px;
+    padding: 19px 18px 17px 18px;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        color: $color-main-white;
+        background-color: $color-secondary-gray2;
+    }
+}
+
+  

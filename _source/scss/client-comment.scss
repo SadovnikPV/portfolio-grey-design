@@ -1,0 +1,101 @@
+.page__client-comment {
+}
+.client-comment {
+    background-color: $color-bg-white;
+}
+.client-comment__container {
+}
+.client-comment__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.client-comment__title {
+    font-family: "Cabin-Regular",sans-serif;
+    @include font-style-mix(48px, 400, 1.25, $color-main-black);
+    margin: 118px 0 67px 0;
+    @media (max-width: 768px) {
+        margin: 60px 0 30px 0;
+    }
+}
+.client-comment__columns {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 137px;
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+    }
+}
+.client-comment__column {
+    &:not(:last-child) {
+        margin-right: 30px;
+        @media (max-width: 768px) {
+            margin-right: 0;
+        }
+    }
+}
+.comment-column {
+    flex: 1 1 50%;
+    @media (max-width: 768px) {
+        flex: 1 1 100%;
+        margin-bottom: 32px;
+    }
+}
+.comment-column__article {
+    font-family: "Lato-Regular",sans-serif;
+    @include font-style-mix(20px, 400, 1.4, $color-secondary-gray);
+    border: 2px solid $color-border-comment;
+    padding: 22px 30px 26px 29px;
+    margin: 0 0 19px 0;
+    position: relative;
+    &::before {
+        content: '';
+	    position: absolute;
+	    width: 0;
+	    height: 0;
+        bottom: -24px;
+        right: 21px;
+        border: 12px solid;
+        border-color: $color-border-comment transparent transparent transparent;
+    }
+    &::after {
+        content: '';
+	    position: absolute;
+	    width: 0;
+	    height: 0;
+        bottom: -21px;
+        right: 21px;
+        border: 12px solid;
+        border-color: $color-bg-white transparent transparent transparent;
+    }
+}
+.comment-column__signature {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+.comment-column__author-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    margin: 0 23px 0 0;
+}
+.comment-column__author-name {
+    font-family: "Lato-Bold",sans-serif;
+    @include font-style-mix(18px, 700, 0.3333, $color-main-black);
+    margin: 0 0 12px 0;
+}
+.comment-column__author-position {
+    font-family: "Lato-Regular",sans-serif;
+    @include font-style-mix(16px, 400, 1, $color-secondary-gray3);
+}
+.comment-column__avatar-column {
+}
+  

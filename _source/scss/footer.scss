@@ -1,0 +1,88 @@
+.footer {
+    background-color: $color-bg-footer;
+}
+.footer__container {
+}
+.footer__body {
+    padding: 50px 0 59px 0;
+    @media (max-width: 1024px) {
+        padding: 40px 0 20px 0;
+    }
+    @media (max-width: 576px) {
+        padding: 20px 0 20px 0;
+    }
+}
+.footer__columns {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 1024px) {
+        flex-wrap: wrap;
+    }
+}
+.footer__column {
+    flex: 1 1 25%;
+    @media (max-width: 1024px) {
+        flex: 1 1 40%;
+    }
+    @media (max-width: 576px) {
+        flex: 1 1 100%;
+    }
+}
+.ftr-column {
+    padding: 0 15px 0 0;
+    &:first-child {
+        padding-top: 20px;
+    }
+    &:not(:first-child) {
+        padding: 0 15px 0 3px;
+        @media (max-width: 1024px) {
+            padding: 0 15px 0 0;
+        }
+    }
+    &:not(:last-child) {
+        @media (min-width: 1024px) {
+            margin: 0 20px 0 0;
+        }
+    }
+    @media (max-width: 1024px) {
+        margin: 0 20px 40px 0;
+    }
+}
+.footer__logo {
+    font-family: "PoiretOne-Regular",sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: $color-main-white;
+}
+.footer__logo_fnt-bold {
+    white-space: nowrap;
+    font-weight: bold;
+}
+.ftr-column__country {
+    font-family: "Lato-Bold",sans-serif;
+    @include font-style-mix(16px, 700, 1, $color-main-white);
+    text-transform: uppercase;
+    margin: 0 0 12px 0;
+}
+.ftr-column__address {
+    font-family: "Lato-Regular",sans-serif;
+    @include font-style-mix(14px, 400, 1.43, $color-main-white);
+    margin: 0 0 18px 0;
+}
+.ftr-column__phone {
+    display: flex;
+    font-family: "Lato-Regular",sans-serif;
+    @include font-style-mix(14px, 400, 1.43, $color-main-white);
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.ftr-column__mail {
+    font-family: "Lato-Regular",sans-serif;
+    @include font-style-mix(14px, 400, 1.43, $color-main-white);
+    &:hover {
+        text-decoration: underline;
+    }
+}

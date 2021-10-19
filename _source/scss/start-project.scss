@@ -1,0 +1,51 @@
+.page__start-project {
+}
+.start-project {
+    background-color: $color-bg-green;
+}
+.start-project__container {
+}
+.start-project__body {
+    display: flex;
+    flex-direction: row;
+    padding: 55px 0 59px 0;
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        padding: 40px 0 40px 0;
+    }
+}
+.start-project__text {
+    flex: 1 1 65%;
+    margin: 0 10px 0 0;
+    @media (max-width: 768px) {
+        flex: 1 1 100%;
+        margin: 0 0 15px 0;
+    }
+}
+.start-project__title {
+    font-family: "Lato-Bold",sans-serif;
+    @include font-style-mix(24px, 700, 1, $color-main-white);
+    margin: 0 0 5px 0;
+}
+.start-project__subtitle {
+    font-family: "Lato-Regular",sans-serif;
+    @include font-style-mix(16px, 400, 1.5, $color-main-white);
+}
+.start-project__buttons {
+    padding: 5px 1px 0 0;
+}
+.start-project__button {
+    display: flex;
+    font-family: "Lato-Bold",sans-serif;
+    @include font-style-mix(16px, 700, 1, $color-main-white);
+    text-transform: uppercase;
+    border: 2px solid $color-main-white;
+    border-radius: 5px;
+    padding: 17px 18px 17px 18px;
+    transition: all 0.3s ease 0;
+    &:hover {
+        color: $color-bg-green;
+        background-color: $color-main-white;
+    }
+}
+  
