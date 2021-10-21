@@ -217,7 +217,7 @@ body {
   line-height: 1.25;
   color: #000;
   text-align: center;
-  margin: 116px 0 98px 0;
+  margin: 116px 0 63px 0;
 }
 
 .features__columns {
@@ -228,10 +228,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 0 0 127px 0;
+}
+
+.features__column-wrap {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 33.333%;
           flex: 1 1 33.333%;
-  margin: 0 0 127px 0;
+}
+.features__column-wrap:not(:last-child) {
+  margin: 0 32px 0 0;
+}
+
+.features__column-top {
+  min-height: 35px;
 }
 
 .column-features {
@@ -241,12 +251,20 @@ body {
   border-width: 2px;
   border-color: #f2f2f2;
 }
-.column-features:not(:last-child) {
-  margin: 0 32px 0 0;
-}
 
 .column-features__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: -32px 0 0 0;
+}
+
+.column-features__img {
+  max-width: 65px;
+  height: auto;
 }
 
 .column-features__title {
@@ -256,7 +274,17 @@ body {
   line-height: 0.333;
   color: #000;
   text-transform: uppercase;
-  margin: 24px 0;
+  margin: 28px 0 24px 0;
+}
+@media (max-width: 576px) {
+  .column-features__title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .column-features__title {
+    font-size: 14px;
+  }
 }
 
 .column-features__text {
@@ -739,12 +767,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .from-blog__title {
@@ -753,6 +775,7 @@ body {
   font-weight: 400;
   line-height: 1.25;
   color: #000;
+  text-align: center;
   padding: 118px 0 0 0;
   margin: 0 0 64px 0;
 }
@@ -779,7 +802,13 @@ body {
 }
 
 .blog-column__img {
-  margin: 0 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 20px auto;
 }
 .blog-column__img img {
   max-width: 330px;
@@ -796,6 +825,11 @@ body {
   padding: 0 50px 0 18px;
   margin: 0 0 16px 0;
 }
+@media (max-width: 1024px) {
+  .blog-column__title {
+    padding: 0 18px 0 18px;
+  }
+}
 
 .blog-column__data {
   display: -webkit-box;
@@ -807,6 +841,18 @@ body {
           align-items: center;
   margin: 0 0 14px 0;
 }
+@media (max-width: 1024px) {
+  .blog-column__data {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .blog-column__data {
+    padding: 0 10px 0 10px;
+  }
+}
 
 .blog-column__date {
   font-family: "Lato-Regular", sans-serif;
@@ -815,9 +861,29 @@ body {
   line-height: 1;
   color: #999999;
   margin: 0 30px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+@media (max-width: 1024px) {
+  .blog-column__date {
+    min-width: 120px;
+  }
+}
+@media (max-width: 480px) {
+  .blog-column__date {
+    min-width: 100px;
+    margin: 0 10px 0 0;
+  }
 }
 
 .blog-column__icon-date {
+  max-width: 16px;
+  max-height: 16px;
+  height: auto;
   margin: 0 4px 0 0;
 }
 
@@ -831,6 +897,8 @@ body {
 }
 
 .blog-column__icon-comments {
+  max-width: 16px;
+  height: auto;
   margin: 0 4px 0 0;
 }
 
@@ -855,6 +923,21 @@ body {
   line-height: 1.5;
   color: #444444;
   padding: 0 40px 0 18px;
+}
+@media (max-width: 1024px) {
+  .blog-column__text {
+    padding: 0 100px 0 100px;
+  }
+}
+@media (max-width: 768px) {
+  .blog-column__text {
+    padding: 0 40px 0 40px;
+  }
+}
+@media (max-width: 480px) {
+  .blog-column__text {
+    padding: 0 10px 0 10px;
+  }
 }
 
 .start-project {
@@ -1071,4 +1154,36 @@ body {
 }
 .ftr-column__mail:hover {
   text-decoration: underline;
+}
+
+.slider {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  margin: 0px 0px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #9b9a95;
+}
+
+.slick-slide {
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
 }

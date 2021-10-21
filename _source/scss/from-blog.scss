@@ -8,12 +8,11 @@
 .from-blog__body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .from-blog__title {
     font-family: "Cabin-Regular",sans-serif;
     @include font-style-mix(48px, 400, 1.25, $color-main-black);
+    text-align: center;
     padding: 118px 0 0 0;
     margin: 0 0 64px 0;
 }
@@ -31,7 +30,9 @@
     }
 }
 .blog-column__img {
-    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 20px auto;
     img {
         max-width: 330px;
         width: 100%;
@@ -43,19 +44,41 @@
     @include font-style-mix(18px, 700, 1.5, $color-main-black);
     padding: 0 50px 0 18px;
     margin: 0 0 16px 0;
+    @media (max-width: 1024px) {
+        padding: 0 18px 0 18px;
+    }
 }
 .blog-column__data {
     display: flex;
     padding: 0 50px 0 18px;
     align-items: center;
+    //justify-content: center;
     margin: 0 0 14px 0;
+    @media (max-width: 1024px) {
+        justify-content: center;
+    }
+    @media (max-width: 480px) {
+        padding: 0 10px 0 10px;
+    }
 }
 .blog-column__date {
     font-family: "Lato-Regular",sans-serif;
     @include font-style-mix(14px, 400, 1, $color-secondary-gray4);
     margin: 0 30px 0 0;
+    display: flex;
+    justify-content: left;
+    @media (max-width: 1024px) {
+        min-width: 120px;
+    }
+    @media (max-width: 480px) {
+        min-width: 100px;
+        margin: 0 10px 0 0;
+    }
 }
 .blog-column__icon-date {
+    max-width: 16px;
+    max-height: 16px;
+    height: auto;
     margin: 0 4px 0 0;
 }
 .blog-column__comments {
@@ -63,6 +86,8 @@
     align-items: center;
 }
 .blog-column__icon-comments {
+    max-width: 16px;
+    height: auto;
     margin: 0 4px 0 0;
 }
 .blog-column__link-comments {
@@ -78,4 +103,13 @@
     font-family: "Lato-Regular",sans-serif;
     @include font-style-mix(16px, 400, 1.5, $color-secondary-gray);
     padding: 0 40px 0 18px;
+    @media (max-width: 1024px) {
+        padding: 0 100px 0 100px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 40px 0 40px;
+    }
+    @media (max-width: 480px) {
+        padding: 0 10px 0 10px;
+    }
 }

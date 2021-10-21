@@ -1,0 +1,31 @@
+.slider {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  margin: 0px 0px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
+}
